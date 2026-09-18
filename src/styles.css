@@ -1,3 +1,68 @@
+@font-face {
+    font-family: "PT Serif";
+    src: url("./assets/PTSerif-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Matemasie-Regular";
+    src: url(./assets/Matemasie-Regular.ttf) format("truetype");
+}
+
 body{
-    background-color: rosybrown;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header{
+    box-sizing: border-box;
+    padding:1rem;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    flex: 1;
+}
+
+#sidebar{
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -2px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+
+footer{
+    padding: 1rem;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+
+}
+
+button{
+    z-index: 2;
+    background-color: white;
+    border: 1px rgb(14, 63, 126, 0.04) solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: 0.1s;    
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+
+#logo{
+    font-family: "Matemasie-Regular";
+    font-size: xx-large;
+    color:slateblue;
+}
+
+button:hover{
+    color: white;
+    background-color: slateblue;
 }
