@@ -8,20 +8,22 @@
     src: url(./assets/Matemasie-Regular.ttf) format("truetype");
 }
 
-:root.dark{
-    --bg-color: rgb(33,42,55); /*midnight*/
-    --bg-hover-button: rgb(56, 62, 71); /*custom lighter color*/
-    --text-color: #F8F8FF; /*ghost white*/
-    --text-hover-color: #DB2777; /*berry pink */
-    --logo-color: #F8F8FF;
+:root.dark{ /*colors from Material theme builder*/
+    --bg-color: #121318;
+    --button-bg-color: #434659;
+    --button-bg-hover-button: lightblue;
+    --text-color: #e0e0e0;
+    --text-hover-color: #DB2777;
+    --logo-color: #505b92;
 }
 
 :root.light{
-    --bg-color: #F8F8FF;
-    --bg-hover-button: rgb(170, 170, 170);
-    --text-color: rgb(170, 170, 170);
+    --bg-color: #fbf8ff;
+    --button-bg-color: #efedf4;
+    --button-bg-hover-button: lightblue;
+    --text-color: #DB2777;
     --text-hover-color: #8c6d9b;
-    --logo-color: rgb(170, 170, 170);
+    --logo-color: #b9c3ff;
 }
 
 body{
@@ -66,7 +68,7 @@ footer{
 
 button{
     z-index: 2;
-    background-color: var(--bg-color);
+    background-color: var(--button-bg-color);
     color: var(--text-color);
     border: 1px rgb(14, 63, 126, 0.04) solid;
     border-radius: 1rem;
@@ -83,5 +85,5 @@ button{
 
 button:hover{
     color: var(--text-hover-color);
-    background-color: var(--bg-hover-button);
+    background-color: var(--button-bg-hover-button);
 }
