@@ -8,44 +8,65 @@
     src: url(./assets/Matemasie-Regular.ttf) format("truetype");
 }
 
-:root.dark{ /*colors from Material theme builder*/
-    --bg-color: #121318;
+@property --fade-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: transparent;
+}
+
+:root {
+    transition: --fade-color 200ms ease;
+}
+
+:root.dark{
+    --fade-color: rgba(12,12,12, .75);
     --button-bg-color: #434659;
     --button-bg-hover-button: lightblue;
     --text-color: #e0e0e0;
     --text-hover-color: #DB2777;
-    --logo-color: #505b92;
+    --logo-color: #e0e0e0;
 }
 
 :root.light{
-    --bg-color: #fbf8ff;
+    --fade-color: rgba(220,220,220, .1);
     --button-bg-color: #efedf4;
     --button-bg-hover-button: lightblue;
     --text-color: #DB2777;
     --text-hover-color: #8c6d9b;
-    --logo-color: #b9c3ff;
+    --logo-color: #121212;
 }
 
 body{
     display: flex;
     flex-direction: column;
-    background-color: var(--bg-color);
+    background-image: url(assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 0 100px 20px rgba(0, 0, 0, 1);
     color: var(--text-color);
     box-sizing: border-box;
     margin: 0;
     min-height: 100vh;
 }
 
+#fade{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--fade-color);
+}
+
 header{
     box-sizing: border-box;
     padding:1rem;
-    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+    border-bottom: 1px gainsboro solid;
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
 }
@@ -57,13 +78,15 @@ nav{
 }
 
 #sidebar{
-    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -2px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+    box-sizing: border-box;
+    border-right: 1px gainsboro solid;
+    padding: 1rem;
 }
 
 footer{
+    box-sizing: border-box;
+    border-top: 1px gainsboro solid;
     padding: 1rem;
-    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
-
 }
 
 button{
