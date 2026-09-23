@@ -26,8 +26,33 @@
 
         <!--render from here-->
         <div id="content"> 
-            <div id="sidebar">
-               <!--   <button>+</button>-->
+            <div class="list-container">
+                <div class="title"><h3>Title</h3></div>
+
+                <div class="entry">
+                    <div class="checkbox-name">
+                        <span id="console-icon" class="material-symbols-outlined">add_box</span>
+                        <div>Add a new task</div>
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <div class="checkbox-name">
+                        <div class="drag-indicator"><span class="material-symbols-outlined">drag_indicator</span></div>
+                        <input type="checkbox" name="" id="" checked=true>
+                        <div>Name</div>
+                    </div>
+
+                    <div class="dropdown"><span class="material-symbols-outlined">more_vert</span>
+                        <div class="dropdown-content">
+                            <div class="dropdown-icons">
+                                <button class="dropdown-button"><span class="material-symbols-outlined">edit</span>edit</button>
+                                <button class="dropdown-button"><span class="material-symbols-outlined">autorenew</span>repeat</button>
+                                <button class="dropdown-button"><span class="material-symbols-outlined">delete</span>delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <footer></footer>

@@ -21,7 +21,7 @@
 :root.dark{
     --fade-color: rgba(12,12,12, .75);
     --button-bg-color: #434659;
-    --button-bg-hover-button: lightblue;
+    --button-bg-hover-button: #eebed4;
     --text-color: #e0e0e0;
     --text-hover-color: #DB2777;
     --logo-color: #e0e0e0;
@@ -30,9 +30,9 @@
 :root.light{
     --fade-color: rgba(220,220,220, .1);
     --button-bg-color: #efedf4;
-    --button-bg-hover-button: lightblue;
+    --button-bg-hover-button: #eebed4;
     --text-color: #DB2777;
-    --text-hover-color: #8c6d9b;
+    --text-hover-color: white;
     --logo-color: #121212;
 }
 
@@ -69,6 +69,7 @@ nav{
 }
 
 #container{
+    z-index: 3;
     display: flex;
     border-radius: 2rem;
     overflow: hidden;
@@ -92,14 +93,91 @@ nav{
 }
 
 #content{
-    display: grid;
-    grid-template-columns: 250px 1fr;
+    display: flex;
+    flex-direction: row;
     flex: 1;
+    padding: 1rem;
 }
 
-#sidebar{
-    box-sizing: border-box;
+.list-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 300px;
     padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.title > h3{
+    margin: 0;
+}
+
+.drag-indicator{
+    cursor: move;
+}
+
+.checkbox-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.entry{
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entry:hover{
+    background-color:#eebed4;
+    border-radius: 10px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+    margin: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dropdown-button{
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    border-style: none;
+    border-radius: 0;
 }
 
 footer{
