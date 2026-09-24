@@ -99,17 +99,28 @@ nav{
     padding: 1rem;
 }
 
+hr{
+    margin: 0;
+    border: 1px rgba(245, 1, 135, 0.205) solid;
+    width: 100%;
+}
+
 .list-container{
     display: flex;
     flex-direction: column;
     background-color: white;
     width: 300px;
-    padding: 1rem;
+
     border-radius: 1rem;
     box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
 }
 
+.list-container > * {
+    font-family: Roboto;
+}
+
 .title{
+    padding: .5rem;
     display: flex;
     justify-content: center;
 }
@@ -130,7 +141,7 @@ nav{
 }
 
 .entry{
-    padding: .5rem;
+    padding: .25rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -139,7 +150,7 @@ nav{
 
 .entry:hover{
     background-color:#eebed4;
-    border-radius: 10px;
+    transition: .3s ease;
 }
 
 .dropdown {
@@ -204,4 +215,6 @@ button{
 button:hover{
     color: var(--text-hover-color);
     background-color: var(--button-bg-hover-button);
+    transition: .3s ease;
+    overflow: hidden;
 }

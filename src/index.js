@@ -80,4 +80,3 @@ function dragElement(elmnt) {
         document.removeEventListener("mouseup", closeDragElement);
     }
 }
-
