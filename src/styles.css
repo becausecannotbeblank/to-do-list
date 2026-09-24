@@ -99,19 +99,15 @@ nav{
     padding: 1rem;
 }
 
-hr{
-    margin: 0;
-    border: 1px rgba(245, 1, 135, 0.205) solid;
-    width: 100%;
-}
-
 .list-container{
     display: flex;
     flex-direction: column;
     background-color: white;
     width: 300px;
-
-    border-radius: 1rem;
+    padding: 1rem;
+    gap: .5rem;
+    border: 1px solid rgb(196, 193, 193);
+    border-radius: 4px;
     box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
 }
 
@@ -129,66 +125,15 @@ hr{
     margin: 0;
 }
 
-.drag-indicator{
-    cursor: move;
-}
-
-.checkbox-name{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-}
-
-.entry{
-    padding: .25rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.entry:hover{
-    background-color:#eebed4;
-    transition: .3s ease;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 130px;
-    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
-    margin: 0;
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-icons{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.dropdown-button{
-    margin: 0;
+.add-new-entry{
+    border: 1px solid rgb(196, 193, 193);
+    border-radius: 4px;
     padding: 1rem;
+    gap: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 1rem;
-    background-color: white;
-    border-style: none;
-    border-radius: 0;
 }
 
 footer{
@@ -203,13 +148,6 @@ button{
     border-radius: 1rem;
     padding: 1rem;
     transition: 0.1s;    
-    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
-}
-
-#logo{
-    font-family: "Matemasie-Regular";
-    font-size: xx-large;
-    color: var(--logo-color);
 }
 
 button:hover{
@@ -218,3 +156,10 @@ button:hover{
     transition: .3s ease;
     overflow: hidden;
 }
+
+#logo{
+    font-family: "Matemasie-Regular";
+    font-size: xx-large;
+    color: var(--logo-color);
+}
+
