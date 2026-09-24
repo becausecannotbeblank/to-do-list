@@ -20,7 +20,7 @@ document.getElementById("switch-theme-button").addEventListener("click", setThem
 // W3schools + altered by ChatGPT: Make the DIV element draggable:
 // Make #container draggable
 
-const elmnt = document.getElementById("container");
+const elmnt = document.getElementById("console");
 
 const rect = elmnt.getBoundingClientRect();
 
