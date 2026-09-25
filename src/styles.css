@@ -56,6 +56,7 @@ p{
     margin: 0;
     padding: 0;
     font-family: Roboto;
+    font-size: small;
 }
 
 #fade{
@@ -122,121 +123,6 @@ button:hover{
     flex-direction: row;
     flex: 1;
     padding: 1rem;
-}
-
-.list-container{
-    border: 1px solid rgb(196, 193, 193);
-    border-radius: 4px;
-    background-color: var(--list-bg-color);
-    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
-}
-
-.list-content{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 300px;
-    padding: 1rem;
-    gap: 1rem;
-}
-
-.list-taskbar{
-    margin: 0;
-    display: flex;
-    padding-left: 1rem;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid rgb(196, 193, 193);
-    background-color: whitesmoke;
-}
-
-.title{
-    width: 25ch;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.list-taskbar-options{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.list-taskbar-options > button{
-    margin: 0;
-    padding: 0rem .25rem;
-    border-style: none;
-    border-left: 1px solid rgb(196, 193, 193);
-    border-radius: 0;
-}
-
-.add-entry{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    border: 1px solid rgb(196, 193, 193);
-    border-radius: 4px;
-    gap: 1rem;
-}
-
-.entry{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid rgb(196, 193, 193);
-    border-radius: 4px;
-    gap: 1rem;
-}
-
-.entry-drag-flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.entry-options-flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.entry-text{
-    padding-left: 1rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: start;
-}
-
-.entry-symbol{
-    padding: 1rem;
-    border-right: 1px solid rgb(196, 193, 193);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.entry-checkbox{
-    padding: 1rem;
-    border-left: 1px solid rgb(196, 193, 193);  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.entry-options{
-    padding: 1rem .1rem;
-    border-left: 1px solid rgb(196, 193, 193);  
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 footer{
