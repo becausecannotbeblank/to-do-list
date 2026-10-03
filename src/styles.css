@@ -59,6 +59,12 @@ p{
     font-size: small;
 }
 
+#logo{
+    font-family: "Matemasie-Regular";
+    font-size: xx-large;
+    color: var(--logo-color);
+}
+
 #fade{
     width: 100vw;
     height: 100vh;
@@ -78,12 +84,13 @@ nav{
 }
 
 button{
-    padding: 0;
     z-index: 2;
-    background-color: var(--button-bg-color);
+    justify-content: center;
+    background-color: var(--list-bg-color);
     color: var(--text-color);
     border-radius: 4px;
     transition: 0.1s;    
+    border-style: none;
 }
 
 button:hover{
@@ -175,11 +182,10 @@ button:hover{
     border-radius: 0;
 }
 
-.add-entry{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+.entry{
+    display: grid;
+    grid-template-columns: [drag] 24px [title] 1fr [check] 24px [entry-options] 24px;
+    grid-template-rows: 24px;
     border: 1px solid rgb(196, 193, 193);
     border-radius: 4px;
     gap: 1rem;
@@ -190,9 +196,4 @@ footer{
     padding: 1rem;
 }
 
-#logo{
-    font-family: "Matemasie-Regular";
-    font-size: xx-large;
-    color: var(--logo-color);
-}
 
