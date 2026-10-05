@@ -84,13 +84,17 @@ nav{
 }
 
 button{
+    display: flex;
+    justify-content: center;
     z-index: 2;
+    padding: .5rem;
     justify-content: center;
     background-color: var(--list-bg-color);
     color: var(--text-color);
     border-radius: 4px;
     transition: 0.1s;    
     border-style: none;
+    margin:0;
 }
 
 button:hover{
@@ -182,18 +186,28 @@ button:hover{
     border-radius: 0;
 }
 
-.entry{
-    display: grid;
-    grid-template-columns: [drag] 24px [title] 1fr [check] 24px [entry-options] 24px;
-    grid-template-rows: 24px;
+.entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border: 1px solid rgb(196, 193, 193);
-    border-radius: 4px;
-    gap: 1rem;
 }
 
-footer{
-    box-sizing: border-box;
-    padding: 1rem;
+.entry-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.entry-options{
+    display: flex;
+    flex-direction: row;
+}
+
+.entry-options > * {
+    border-left: 1px solid rgb(196, 193, 193);
+    border-radius: 0;
 }
 
 
