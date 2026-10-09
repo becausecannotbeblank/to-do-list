@@ -193,10 +193,21 @@ button:hover{
     border: 1px solid rgb(196, 193, 193);
 }
 
-.entry-title {
+.title-drag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.entry-drag > * {
+    border-right: 1px solid rgb(196, 193, 193);
+    border-radius: 0;    
+}
+
+.entry-title{
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: flex-start;
     padding-left: 1rem;
 }
 
@@ -209,5 +220,3 @@ button:hover{
     border-left: 1px solid rgb(196, 193, 193);
     border-radius: 0;
 }
-
-
