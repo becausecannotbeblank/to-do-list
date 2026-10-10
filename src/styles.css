@@ -117,7 +117,7 @@ button:hover{
     flex-direction: column;
     padding: 1rem;
     justify-content: center;
-    background-color: white;
+    background-color: var(--list-bg-color);
     border-style: none;
     border-radius: 0%;
 }
@@ -143,13 +143,12 @@ button:hover{
     box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
 }
 
-.list-content{
+.list-content{ /*this has to change now because it controls entry + its menu*/
     display: flex;
     flex-direction: column;
     overflow: hidden;
     width: 300px;
     padding: 1rem;
-    gap: 1rem;
 }
 
 .list-taskbar{
@@ -187,10 +186,13 @@ button:hover{
 }
 
 .entry {
+    z-index: 3;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border: 1px solid rgb(196, 193, 193);
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
 }
 
 .title-drag{
@@ -219,4 +221,27 @@ button:hover{
 .entry-options > * {
     border-left: 1px solid rgb(196, 193, 193);
     border-radius: 0;
+}
+
+.entry-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-left: 1px solid rgb(196, 193, 193);
+    border-bottom: 1px solid rgb(196, 193, 193);
+    border-right: 1px solid rgb(196, 193, 193);
+}
+
+.entry-menu > * {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+}
+
+.entry-menu > :not(:last-child){
+    border-right: 1px solid rgb(196, 193, 193);
+}
+
+.delete-btn{
+    color: red;
 }
